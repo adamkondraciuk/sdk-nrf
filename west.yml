@@ -21,10 +21,10 @@ manifest:
     # nRF Connect SDK GitHub organization.
     # NCS repositories are hosted here.
     - name: ncs
-      url-base: https://github.com/nrfconnect
+      url-base: https://github.com/adamkondraciuk
     # Third-party repository sources:
     - name: zephyrproject
-      url-base: https://github.com/zephyrproject-rtos
+      url-base: https://github.com/adamkondraciuk
     - name: throwtheswitch
       url-base: https://github.com/ThrowTheSwitch
     - name: armmbed
@@ -50,7 +50,7 @@ manifest:
     # https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/zephyr/guides/modules.html
     - name: zephyr
       repo-path: sdk-zephyr
-      revision: v2.4.0-ncs1
+      revision: pm_master
       import:
         # In addition to the zephyr repository itself, NCS also
         # imports the contents of zephyr/west.yml at the above
