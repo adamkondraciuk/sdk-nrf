@@ -35,10 +35,6 @@
 	status = "disabled";
 };
 
-&grtc {
-	status = "disabled";
-};
-
 &uart20 {
 	status = "disabled";
 };

@@ -1,0 +1,2 @@
+config HPF_PM
+	bool "HPF power management"

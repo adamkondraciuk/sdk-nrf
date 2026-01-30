@@ -14,6 +14,7 @@
 #include <hal/nrf_vpr_csr.h>
 #include <hal/nrf_vpr_csr_vio.h>
 #include <haly/nrfy_gpio.h>
+#include <hpf_pm/hpf_pm.h>
 
 #define HRT_IRQ_PRIORITY          2
 #define HRT_VEVIF_IDX_GPIO_CLEAR  17
@@ -173,7 +174,11 @@ int main(void)
 	nrf_vpr_csr_rtperiph_enable_set(true);
 
 	while (true) {
-		k_cpu_idle();
+		//k_cpu_idle();
+		hpf_pm_go_to_wait();
+		hpf_pm_go_to_sleep();
+		hpf_pm_go_to_hibernate();
+		//k_msleep(100);
 	}
 
 	return 0;

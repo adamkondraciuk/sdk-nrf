@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: LicenseRef-Nordic-5-Clause
 #
 
+add_subdirectory_ifdef(CONFIG_HPF_PM hpf_pm)
 add_subdirectory_ifdef(CONFIG_BT bluetooth)
 
 add_subdirectory_ifdef(CONFIG_IS_SECURE_BOOTLOADER bootloader)

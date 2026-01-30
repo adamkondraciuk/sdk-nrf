@@ -15,6 +15,7 @@
 #include <hal/nrf_vpr_csr_vtim.h>
 #include <hal/nrf_timer.h>
 #include <haly/nrfy_gpio.h>
+#include <hpf_pm/hpf_pm.h>
 
 #include <drivers/mspi/hpf_mspi.h>
 
@@ -711,7 +712,9 @@ int main(void)
 	nrf_vpr_csr_rtperiph_enable_set(true);
 
 	while (true) {
-		k_cpu_idle();
+		//hpf_pm_go_to_wait();
+		//hpf_pm_go_to_sleep();
+		hpf_pm_go_to_hibernate();
 	}
 
 	return 0;

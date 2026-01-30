@@ -74,3 +74,6 @@ endif # HPF_FLPR_APP_FAULT_TIMER
 endif # HPF_MSPI
 
 endif # HPF
+
+config HPF_PM
+	bool "HPF power management"
